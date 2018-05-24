@@ -1,2 +1,2 @@
-# Operating-System-Simulation
+# Operating System Simulation
 Developing an application that simulate OS works
