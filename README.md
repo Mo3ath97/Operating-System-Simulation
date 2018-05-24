@@ -1,2 +1,2 @@
 # Operating System Simulation
-Developing an application that simulate OS works
+"Operating System Project" : Developing an application that simulate OS works
