@@ -20,6 +20,37 @@
 2. The expected execution time is also distributed between 16ut and 512ut.
 3. The expected IO time is also distributed between 100ut and 200ut.
 
+## Initialization phase:
+> You should perform the following steps before running the simulation:
+1. Generate enough programs with random memory size and random expected execution
+time so to fill the hard disk. ( Program sizes  0.5GB)
+2. Load the RAM with the maximum number of user programs.
+3. Start the simulation which consists of a simulation of the Machine Execution Cycle.
+
+## The Machine Execution Cycle:
+> The following algorithm simulates the machine Execution Cycle:
+* MEC algorithm:
+        ''' While true do {
+        Increments the simulated clock by one unit of time
+        (* This assumes that one instruction is executed *)
+        If there are interrupts
+        Then Interrupts the current program and calls the ISRi
+        endif
+        } '''
+* Interrupts are also randomly generated:
+1. The possibility that there are interrupts is 10%
+2. The possibility that there is an IO request is 20%
+3. The possibility that the busy IO device will terminate is 20%
+4. The possibility that the program terminates normally is 5%
+5. The possibility that the program terminates abnormally is 1%
+
+The main simulator program is like this:
+      ''' Initialize the simulation
+      While there are jobs in the H-Disk do {
+      Run the Machine Execution Cycle
+      }
+      Print the required statistics '''
+
 ## Output from the simulation:
 > At the end of the simulation, you should print the following results:
 1. The number of initially generated jobs stored on the H-disk.
