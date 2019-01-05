@@ -23,13 +23,14 @@
 ## Initialization phase:
 > You should perform the following steps before running the simulation:
 1. Generate enough programs with random memory size and random expected execution
-time so to fill the hard disk. ( Program sizes  0.5GB)
+time so to fill the hard disk. (Total program sizes <= 0.5GB)
 2. Load the RAM with the maximum number of user programs.
 3. Start the simulation which consists of a simulation of the Machine Execution Cycle.
 
 ## The Machine Execution Cycle:
 > The following algorithm simulates the machine Execution Cycle:
 * MEC algorithm:
+
         ''' While true do {
         Increments the simulated clock by one unit of time
         (* This assumes that one instruction is executed *)
@@ -37,6 +38,7 @@ time so to fill the hard disk. ( Program sizes  0.5GB)
         Then Interrupts the current program and calls the ISRi
         endif
         } '''
+        
 * Interrupts are also randomly generated:
 1. The possibility that there are interrupts is 10%
 2. The possibility that there is an IO request is 20%
@@ -44,7 +46,8 @@ time so to fill the hard disk. ( Program sizes  0.5GB)
 4. The possibility that the program terminates normally is 5%
 5. The possibility that the program terminates abnormally is 1%
 
-The main simulator program is like this:
+* The main simulator program is like this:
+
       ''' Initialize the simulation
       While there are jobs in the H-Disk do {
       Run the Machine Execution Cycle
