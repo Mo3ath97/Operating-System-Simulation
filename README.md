@@ -31,13 +31,13 @@ time so to fill the hard disk. (Total program sizes <= 0.5GB)
 > The following algorithm simulates the machine Execution Cycle:
 * MEC algorithm:
 
-        ''' While true do {
-        Increments the simulated clock by one unit of time
-        (* This assumes that one instruction is executed *)
-        If there are interrupts
-        Then Interrupts the current program and calls the ISRi
-        endif
-        } '''
+        While true do {
+                Increments the simulated clock by one unit of time
+                (* This assumes that one instruction is executed *)
+                If there are interrupts
+                    Then Interrupts the current program and calls the ISRi
+                endif
+        }
         
 * Interrupts are also randomly generated:
 1. The possibility that there are interrupts is 10%
@@ -48,11 +48,10 @@ time so to fill the hard disk. (Total program sizes <= 0.5GB)
 
 * The main simulator program is like this:
 
-      ''' Initialize the simulation
       While there are jobs in the H-Disk do {
-      Run the Machine Execution Cycle
+          Run the Machine Execution Cycle
       }
-      Print the required statistics '''
+      Print the required statistics
 
 ## Output from the simulation:
 > At the end of the simulation, you should print the following results:
