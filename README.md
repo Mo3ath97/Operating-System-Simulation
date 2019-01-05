@@ -13,3 +13,17 @@
 > The operating system is the multiprogramming OS. We would be interested in only 2 features in this simulation: The Job and CPU scheduling.
 1. Job Scheduling: The program with the smallest size is first selected to be loaded in the main memory. We call this technique by SSPF.
 2. CPU scheduling: The CPU is allocated to the program with the smallest expected running time. We call this technique by SETF.
+
+## Program specifications:
+> Each program has 2 main requirements: A *program size* in KB and an expected execution time. Of course, the expected execution time is greater or equal to the *exact execution time*. In addition, each program should have an *Id* and *state*. The student should specify any extra information that is required by the simulation.
+1. The memory sizes are uniformly distributed between 16KB and 16384KB
+2. The expected execution time is also distributed between 16ut and 512ut.
+3. The expected IO time is also distributed between 100ut and 200ut.
+
+## Output from the simulation:
+> At the end of the simulation, you should print the following results:
+1. The number of initially generated jobs stored on the H-disk.
+2. The average program size of all jobs.
+3. The average number of jobs that have completed their execution normally.
+4. The average number of jobs that have completed their execution abnormally.
+5. The number of CPU bound jobs.
