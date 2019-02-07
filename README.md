@@ -50,11 +50,11 @@ The following algorithm simulates the machine Execution Cycle:
         }
         
 * Interrupts are also randomly generated:
-** The possibility that there are interrupts is 10%
-** The possibility that there is an IO request is 20%
-** The possibility that the busy IO device will terminate is 20%
-** The possibility that the program terminates normally is 5%
-** The possibility that the program terminates abnormally is 1%
+        * The possibility that there are interrupts is 10%
+        * The possibility that there is an IO request is 20%
+        * The possibility that the busy IO device will terminate is 20%
+        * The possibility that the program terminates normally is 5%
+        * The possibility that the program terminates abnormally is 1%
 
 * The main simulator program is like this:
 
