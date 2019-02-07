@@ -2,9 +2,9 @@
 > "OS Course Project" : Developing an application that simulate OS works.
 
 ## Hardware:
-'''
-The computer hardware is assumed to have:
-'''
+```
++ The computer hardware is assumed to have:
+```
 1. A hard disk of size of 10 GB where 1/5 of this size is used to store the user programs.
 2. A RAM of size 192MB, where 32MB is used to store the OS.
 3. A CPU that executes one instruction each unit of time.
