@@ -2,7 +2,7 @@
 > "OS Course Project" : Developing an application that simulate OS works.
 
 ## Hardware:
-```
+```diff
 + The computer hardware is assumed to have:
 ```
 1. A hard disk of size of 10 GB where 1/5 of this size is used to store the user programs.
