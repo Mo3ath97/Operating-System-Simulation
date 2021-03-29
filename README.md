@@ -1,18 +1,6 @@
 # Operating System Simulation
 App to simulate how Operating System works
 
-## Table of Content
-* [Project Description](#project-description)
-    * [Hardware](#hardware)
-    * [Operating System](#operating-system)
-    * [Program Specifications](#program-specifications)
-    * [The Machine Execution Cycle](#the-machine-execution-cycle)
-    * [The Expected Output From The Simulation](#the-expected-output-from-the-simulation)
-* [Requirements](#requirements)
-* [Installation](#installation)
-* [How To Use](#how-to-use)
-* [Example](#example)
-
 ## Project Description
 #### Hardware 
 The computer hardware is assumed to have:
